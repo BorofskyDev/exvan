@@ -1,0 +1,14 @@
+@import './style.css';
+
+.about {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.about-title {
+    font-family: var(--heading);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5em auto;
+}
