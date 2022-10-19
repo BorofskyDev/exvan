@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0.5em;
 }
 
 .about-img {
@@ -79,13 +80,16 @@
 }
 
 .post-img {
-    justify-self: center;
+    display: flex;
+    margin: 1em auto;
     max-width: 150px;
 }
+
 .post-title {
     text-transform: uppercase;
     font-size: 1rem;
     text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .posts-desc {
@@ -96,7 +100,29 @@
 }
 
 .posts-link {
+    display: flex;
+    justify-content: center;
     text-transform: uppercase;
     color: hsl(var(--clr-accent1));
     padding: 1em;
+}
+
+@media (max-width: 45em){
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-profile {
+        max-width: 90%;
+        margin: 1em auto;
+    }
+    .about-content {
+        max-width: 90%;
+        margin: 0.5em auto;
+    }
+    .about-posts {
+        max-width: 90%;
+        margin: 1em auto;
+    }
+
 }
